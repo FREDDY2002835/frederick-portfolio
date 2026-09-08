@@ -14,7 +14,7 @@ export default function Contact() {
             </a>
             <a
               className="btn-ghost"
-              href="https://www.linkedin.com/in/fred-rick-63988441b"
+              href="https://www.linkedin.com/in/frederick-muhimuzi-63988441b?utm_source=share_via&utm_content=profile&utm_medium=member_android"
               target="_blank"
               rel="noreferrer"
             >
