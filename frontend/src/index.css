@@ -28,6 +28,8 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -43,6 +45,8 @@ html {
 
 body {
   margin: 0;
+  overflow-x: hidden;
+  width: 100%;
   background:
     radial-gradient(1200px 600px at 15% -10%, rgba(91, 141, 239, 0.16), transparent 60%),
     radial-gradient(900px 500px at 100% 10%, rgba(122, 92, 255, 0.10), transparent 55%),
@@ -218,6 +222,10 @@ section {
   align-items: center;
 }
 
+.hero-grid > * {
+  min-width: 0;
+}
+
 .hero-eyebrow {
   font-family: var(--font-mono);
   font-size: 0.85rem;
@@ -307,6 +315,8 @@ section {
 .mirror-wrap {
   position: relative;
   perspective: 1400px;
+  min-width: 0;
+  max-width: 100%;
 }
 
 .mirror-panel {
@@ -402,6 +412,10 @@ section {
   align-items: start;
 }
 
+.about-grid > * {
+  min-width: 0;
+}
+
 .about-text p + p {
   margin-top: 16px;
 }
@@ -442,6 +456,10 @@ section {
   gap: 24px;
 }
 
+.skills-groups > * {
+  min-width: 0;
+}
+
 .skill-group {
   padding: 26px;
 }
@@ -473,6 +491,10 @@ section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
+}
+
+.projects-grid > * {
+  min-width: 0;
 }
 
 .project-card {
@@ -677,5 +699,88 @@ section {
   }
   .cert-meta {
     justify-content: center;
+  }
+
+  /* ---- smaller text on mobile ---- */
+  .nav-mark {
+    font-size: 0.95rem;
+  }
+  .nav-cta {
+    font-size: 0.82rem;
+    padding: 7px 14px;
+  }
+  .hero-eyebrow {
+    font-size: 0.78rem;
+  }
+  .hero h1 {
+    font-size: clamp(2rem, 8vw, 2.6rem);
+  }
+  .hero-sub {
+    font-size: 0.98rem;
+  }
+  .btn-primary,
+  .btn-ghost {
+    font-size: 0.88rem;
+    padding: 11px 20px;
+  }
+  .hero-stats div strong {
+    font-size: 1.25rem;
+  }
+  .hero-stats div span {
+    font-size: 0.78rem;
+  }
+  .section-head .kicker {
+    font-size: 0.78rem;
+  }
+  .section-head h2 {
+    font-size: clamp(1.5rem, 6vw, 1.9rem);
+  }
+  .section-head p {
+    font-size: 0.95rem;
+  }
+  .about-fact h4 {
+    font-size: 0.92rem;
+  }
+  .about-fact p {
+    font-size: 0.85rem;
+  }
+  .skill-group h3 {
+    font-size: 0.92rem;
+  }
+  .chip {
+    font-size: 0.78rem;
+    padding: 6px 11px;
+  }
+  .project-card h3 {
+    font-size: 1rem;
+  }
+  .project-card p {
+    font-size: 0.85rem;
+  }
+  .project-tags span {
+    font-size: 0.68rem;
+  }
+  .project-link {
+    font-size: 0.82rem;
+  }
+  .cert-info h3 {
+    font-size: 1.1rem;
+  }
+  .cert-meta {
+    font-size: 0.78rem;
+  }
+  .cert-badge {
+    width: 68px;
+    height: 68px;
+    font-size: 1.1rem;
+  }
+  .contact-panel h2 {
+    font-size: clamp(1.5rem, 6vw, 2rem);
+  }
+  .contact-panel p {
+    font-size: 0.92rem;
+  }
+  .footer-inner {
+    font-size: 0.78rem;
   }
 }
