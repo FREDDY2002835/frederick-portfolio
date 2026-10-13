@@ -108,7 +108,7 @@ personal-portfolio/
 
 ## 🌐 Live Demo
 
-**Live Website:** Add your deployed portfolio URL here.
+**Live Website:** https://marvelous-babka-3565cf.netlify.app/
 
 **GitHub Repository:** Add your repository URL here.
 
